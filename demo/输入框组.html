@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <title>输入框组</title>
+</head>
+<body>
+<div class="container">
+    <h1>输入框组 基本用法</h1>
+    <div class="input-group">
+            <span class="input-group-addon">
+                @
+            </span>
+        <input type="text" class="form-control">
+    </div>
+    <hr>
+    <h1>输入框组 尺寸</h1>
+    <div class="input-group input-group-lg">
+            <span class="input-group-addon">
+                @
+            </span>
+        <input type="text" class="form-control">
+    </div>
+    <div class="input-group">
+            <span class="input-group-addon">
+                @
+            </span>
+        <input type="text" class="form-control">
+    </div>
+    <div class="input-group input-group-sm">
+            <span class="input-group-addon">
+                @
+            </span>
+        <input type="text" class="form-control">
+    </div>
+    <h1>多选框和单选按钮</h1>
+    <div class="input-group">
+        <label class="input-group-addon" for="txtName"><input type="checkbox"></label>
+        <input type="text" class="form-control" id="txtName">
+    </div>
+    <div class="input-group">
+        <label class="input-group-addon" for="txtEmail"><input type="radio"></label>
+        <input type="text" class="form-control" id="txtEmail">
+    </div>
+    <h1>按钮下拉菜单，分裂式按钮下拉菜单</h1>
+    <div class="input-group">
+        <div class="input-group-btn">
+            <button class="btn btn-default" data-toggle="dropdown">调试</button>
+            <ul class="dropdown-menu">
+                <li><a href="#">启动调试</a></li>
+                <li><a href="#">暂停调试</a></li>
+                <li><a href="#">停止调试</a></li>
+            </ul>
+        </div>
+        <input type="text" class="form-control">
+    </div><br>
+    <div class="input-group">
+        <div class="input-group-btn">
+            <button class="btn btn-default">调试</button>
+            <button class="btn btn-default" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">启动调试</a></li>
+                <li><a href="#">暂停调试</a></li>
+                <li><a href="#">停止调试</a></li>
+            </ul>
+        </div>
+        <input type="text" class="form-control">
+    </div>
+</div>
+<script src="jquery/jquery-3.1.1.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

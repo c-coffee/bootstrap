@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8" />
+        <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+        <title>Bootstrap实现导航</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="style/site.css">
+    </head>
+    <body class="container">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        街角咖啡
+                    </div>
+                    <button data-target="#divNav" data-toggle="collapse" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="divNav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>
+
+        <script src="jquery/jquery-3.1.1.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+    </body>
+</html>

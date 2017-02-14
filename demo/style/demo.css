@@ -1,0 +1,36 @@
+/*css文件 less文件 都可见*/
+h1 {
+  color: #ff0000;
+}
+.lNav {
+  width: 100px;
+}
+.header {
+  background: url('https://www.baidu.com/img/logo.png') no-repeat;
+}
+h1 {
+  font-size: 100px;
+}
+.demoClass {
+  height: 2;
+}
+.demoClass .testClass {
+  width: 2;
+}
+.btn {
+  display: block;
+  width: 100px;
+  height: 50px;
+}
+.btn-primary {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: blue;
+}
+.btn-danger {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: red;
+}

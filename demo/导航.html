@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <title>导航</title>
+</head>
+<body>
+<div class="container">
+    <h1>基本用法 标签页</h1>
+    <ul class="nav nav-tabs bg-info">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">活动</a></li>
+        <li><a href="#">售后</a></li>
+        <li><a href="#">关于我们</a></li>
+    </ul>
+    <hr>
+    <h1>胶囊式标签页</h1>
+    <ul class="nav nav-pills bg-info">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">活动</a></li>
+        <li><a href="#">售后</a></li>
+        <li><a href="#">关于我们</a></li>
+    </ul>
+    <hr>
+    <h1>堆叠式</h1>
+    <ul class="nav nav-pills nav-stacked bg-info">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">活动</a></li>
+        <li><a href="#">售后</a></li>
+        <li><a href="#">关于我们</a></li>
+    </ul>
+    <hr>
+    <h1>下拉菜单</h1>
+    <ul class="nav nav-pills bg-info">
+        <li class="active"><a href="#">首页 <span class="badge">9</span></a></li>
+        <li><a href="#">产品</a></li>
+        <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">活动<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">参加</a></li>
+                <li><a href="#">捐款</a></li>
+                <li><a href="#">详细说明</a></li>
+            </ul>
+        </li>
+        <li class="disabled"><a href="#">售后</a></li>
+        <li><a href="#">关于我们</a></li>
+    </ul>
+</div>
+
+<script src="jquery/jquery-3.1.1.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

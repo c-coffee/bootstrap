@@ -1,0 +1,74 @@
+//1.注释的类型
+//less文件可见
+/*css文件 less文件 都可见*/
+
+//2.普通变量的定义
+@redColor:#f00;
+h1{
+  color:@redColor;
+}
+
+//3.作为选择器和属性名的变量
+@leftNav:lNav;
+.@{leftNav}{
+  width:100px;
+}
+
+//4.作为URL的变量
+@imgURL:"https://www.baidu.com/img";
+.header{
+  background:url('@{imgURL}/logo.png') no-repeat;
+}
+
+//5.延迟加载
+h1{
+  font-size:@bigSize;
+}
+@bigSize:100px;
+
+//定义多个同名变量
+//同级优先，就近优先
+@var:0;
+.demoClass{
+  @var:1;
+  height:@var;
+  @var:2;
+  .testClass{
+    //@var:3;
+    width:@var;
+    //@var:4;
+  }
+}
+@var:5;
+
+//普通混合
+.btn{
+  display:block;
+  width:100px;
+  height:50px;
+}
+.btn-primary{
+  .btn;
+  background-color:blue;
+}
+.btn-danger{
+  .btn;
+  background-color:red;
+}
+//不带输出的混合
+.btn1(){
+  display:block;
+  width:100px;
+  height:50px;
+}
+
+
+
+
+
+
+
+
+
+
+

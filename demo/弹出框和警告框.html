@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>弹出框</h1>
+        <h4>demo1</h4>
+        <br><br><br>
+        <button  class="btn btn-success" data-placement="left" data-toggle="popover" title="弹出框标题" data-content="添加一些有趣的内容提示给用户！">弹出</button>&nbsp;
+        <button  class="btn btn-success" data-placement="top"  data-toggle="popover" title="弹出框标题" data-content="添加一些有趣的内容提示给用户！">弹出</button>&nbsp;
+        <button  class="btn btn-success" data-placement="bottom"  data-toggle="popover" title="弹出框标题" data-content="添加一些有趣的内容提示给用户！">弹出</button>&nbsp;
+        <button  class="btn btn-success" data-placement="right"  data-toggle="popover" title="弹出框标题" data-content="添加一些有趣的内容提示给用户！">弹出</button>&nbsp;
+        <br><br><br><br><br>
+        <hr>
+        <h4>demo2</h4>
+        <br><br><br><br>
+        <a href="#" tabindex="0" data-toggle="popover" data-placement="top" id="a1" class="btn btn-info">链接提示</a>
+        <br>
+        <hr>
+        <h4>警告框</h4>
+        <h5>demo2</h5>
+        <div class="alert alert-danger fade in">
+            警告：内容可能包含非法字符！
+            <button type="button" class="btn btn-danger" id="btnClose">关闭</button>
+        </div>
+    </div>
+<script src="jquery/jquery-3.1.1.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script>
+    $(function(){
+        $('button[data-toggle="popover"]').popover();
+        $('#a1').popover({
+            title:'链接消息',
+            content:'输入提示内容',
+            trigger:'focus'
+        })
+        $('#btnClose').click(function(){
+            $('#btnClose').alert('close');
+        });
+    })
+</script>
+</body>
+</html>

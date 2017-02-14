@@ -1,0 +1,42 @@
+.container{
+    width:100%;
+    padding:5px;
+    margin:auto;
+}
+.container div{
+    float:left;
+}
+.top{
+    background-color:#2aabd2;
+    width:49%;
+    height:30px;
+    margin:1px;
+}
+.center{
+    background-color:#eb9316;
+    width:99%;
+    height:100px;
+}
+.bottom{
+    background-color:#4cae4c;
+    height:30px;
+    margin:1px;
+    width:24.5%;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .top{
+        width:100%;
+    }
+    .bottom{
+        width:49%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bottom{
+        width:100%;
+    }
+}

@@ -1,0 +1,101 @@
+body {
+  background-color: #ffffff;
+  font-size: 14px;
+  font-family: "Arial", "方正兰亭黑", "微软雅黑", "华文黑体", "宋体", "sans-serif";
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.webWrap {
+  width: 1000px;
+  margin: auto auto;
+}
+.header {
+  background-color: #009b72;
+  height: 28px;
+}
+.header ul {
+  float: right;
+}
+.header ul li {
+  float: left;
+  border-left: 1px solid #47b488;
+}
+.header ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  width: 60px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+}
+.header ul li a:hover {
+  background-color: #47b488;
+}
+.nav {
+  height: 78px;
+}
+.nav #logo {
+  height: 78px;
+  line-height: 78px;
+  float: left;
+}
+.nav ul {
+  float: right;
+}
+.nav ul li {
+  float: left;
+  height: 78px;
+  line-height: 78px;
+  width: 80px;
+  text-align: right;
+}
+.nav ul li.active a {
+  border-bottom: 2px solid #009b72;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #7b7b7b;
+  font-size: 15px;
+}
+.nav ul li a:hover {
+  border-bottom: 2px solid #009b72;
+}
+.productList div {
+  margin: auto auto;
+  position: relative;
+  height: 390px;
+  padding-top: 50px;
+  border: 1px solid #dddddd;
+  border-right: 0;
+}
+.productList div.lastOne {
+  border-right: 1px solid #dddddd;
+}
+.productList div span {
+  display: block;
+  background-image: url(../images/new.png);
+  width: 62px;
+  height: 68px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.productList div p {
+  text-align: center;
+}
+.productList div p.oldPrice {
+  text-decoration: line-through;
+  font-size: 12px;
+}
+.productList div p.newPrice {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f30;
+}

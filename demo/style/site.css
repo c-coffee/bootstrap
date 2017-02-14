@@ -1,0 +1,6 @@
+body {
+}
+
+header, footer, section, aside, article, hgroup, div, nav {
+    border: 1px dotted #808080;
+}

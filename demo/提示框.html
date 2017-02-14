@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <title>提示框</title>
+    <style>
+        .test{
+            background-color:#2e6da4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>提示框</h1>
+        <br>
+        <h2>Demo1</h2>
+        <br>
+        <div id="demo1">
+            <button type="button" class="btn btn-primary"  data-toggle="tooltip" data-placement="left" title="左方提示">左</button>&nbsp;
+            <button type="button" class="btn btn-primary"  data-toggle="tooltip" data-placement="top" title="上方提示">左</button>&nbsp;
+            <button type="button" class="btn btn-primary"  data-toggle="tooltip" data-placement="bottom" title="下方提示">左</button>&nbsp;
+            <button type="button" class="btn btn-primary"  data-toggle="tooltip" data-placement="right" title="右方提示">左</button>&nbsp;
+        </div>
+        <hr>
+        <h2>Demo2</h2>
+        <br>
+        <div id="demo2">
+            <button type="button" class="btn btn-primary"  data-toggle="tooltip">左</button>&nbsp;
+        </div>
+        <hr>
+        <h2>Demo3</h2>
+        <br>
+        <div class="btn-group" id="demo3">
+            <button class="btn btn-primary" data-toggle="tooltip" title="主页">
+                <span class="glyphicon glyphicon-home"></span>
+            </button>
+            <button class="btn btn-primary" data-toggle="tooltip" title="刷新">
+                <span class="glyphicon glyphicon-repeat"></span>
+            </button>
+            <button class="btn btn-primary" data-toggle="tooltip" title="锁定">
+                <span class="glyphicon glyphicon-lock"></span>
+            </button>
+        </div>
+    </div>
+    <script src="jquery/jquery-3.1.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script>
+        $(function(){
+            $('#demo1 button[data-toggle="tooltip"]').tooltip();
+            $('#demo2 button[data-toggle="tooltip"]').tooltip({
+                placement:'top',
+                title:'Js动态生成',
+                trigger:'hover',
+                delay:{"show":100,"hide":200},
+                animation:true
+                //template:'<div class="test"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
+            });
+            $('#demo3 button[data-toggle="tooltip"]').tooltip({
+                placement:'top',
+                container: 'body'
+            });
+        })
+    </script>
+</body>
+</html>

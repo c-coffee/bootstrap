@@ -1,0 +1,115 @@
+//@import "../bootstrap/less/bootstrap";
+@import "variable.less";
+
+body{
+  background-color:@bgColor;
+  font-size: @fontSize;
+  font-family:@fontFamily;
+  margin:0;
+  padding:0;
+}
+ul,li{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.webWrap{
+  width:1000px;
+  margin:auto auto;
+}
+
+.header{
+  @headBG:rgb(0, 155, 114);
+  @headHeight:28px;
+  background-color:@headBG;
+  height:28px;
+  ul{
+    float:right;
+    li{
+      float:left;
+      border-left:1px solid rgb(71, 180, 136);
+      a{
+        @headColor:#fff;
+        //font-weight:bold;
+        text-decoration:none;
+        color:@headColor;
+        display:block;
+        width:60px;
+        height:@headHeight;
+        line-height:@headHeight;
+        text-align:center;
+        &:hover{
+          background-color:rgb(71, 180, 136);
+        }
+      }
+    }
+  }
+}
+.nav{
+  @navHeight:78px;
+  height:@navHeight;
+  #logo{
+    height:@navHeight;
+    line-height:@navHeight;
+    float:left;
+  }
+  ul{
+    float:right;
+    li{
+      float:left;
+      height:@navHeight;
+      line-height:@navHeight;
+      width:@navLiWidth;
+      text-align:right;
+      @navLiWidth:80px;
+      &.active a{
+        border-bottom:2px solid rgb(0, 155, 114);
+      }
+      a{
+        text-decoration:none;
+        color:@fontColor;
+        font-size:15px;
+        &:hover{
+          border-bottom:2px solid rgb(0, 155, 114);
+        }
+      }
+    }
+  }
+}
+
+.productList{
+  div{
+    margin:auto auto;
+    position:relative;
+    height:390px;
+    padding-top:50px;
+    border:1px solid #dddddd;
+    border-right:0;
+    &.lastOne{
+      border-right:1px solid #dddddd;
+    }
+    span{
+      display:block;
+      background-image:url(../images/new.png);
+      width:62px;
+      height:68px;
+      position:absolute;
+      top:0;
+      right:0;
+    }
+    p{
+      text-align:center;
+      &.oldPrice{
+        text-decoration:line-through;
+        font-size:12px;
+      }
+      &.newPrice{
+        font-size:18px;
+        font-weight:bold;
+        color:#f30;
+      }
+    }
+
+  }
+}

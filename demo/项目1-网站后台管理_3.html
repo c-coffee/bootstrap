@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>网站后台管理</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        body{
+            padding-top:70px;
+        }
+        .panel-height{
+            height:260px;
+        }
+        .tab-content{
+            border:1px solid #ddd;
+            border-top:0;
+            padding:15px;
+        }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">零壹学院</a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a></li>
+            </ul>
+            <ul class="navbar-nav nav navbar-right">
+                <li><a href="#">admin <span class="caret"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <ul class="col-md-2 list-group">
+            <li class="list-group-item">用户管理</li>
+            <li class="list-group-item active">用户搜索</li>
+            <li class="list-group-item">添加用户</li>
+        </ul>
+        <div class="col-md-10">
+            <h4>用户搜索</h4>
+            <hr>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#">搜索</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="userSearch">
+                    <div class="alert alert-info">
+                        <strong>技巧提示：</strong>支持模糊搜索和匹配搜索，匹配搜索使用*代替！
+                    </div>
+                    <form action="#" method="get">
+                        <div class="form-group">
+                            <label for="txtUser" class="control-label">用户名</label>
+                            <input type="text" placeholder="输入用户名" class="form-control" id="txtUser">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtUser" class="control-label">UID</label>
+                            <input type="text" placeholder="输入UID" class="form-control" id="txtUID">
+                        </div>
+                        <div class="form-group">
+                            <label for="sltUserGroup" class="control-label">用户组</label>
+                            <select id="sltUserGroup" class="form-control">
+                                <option >限制会员</option>
+                                <option >新手上路</option>
+                                <option selected>注册会员</option>
+                                <option >中级会员</option>
+                                <option >高级会员</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="jquery/jquery-3.1.1.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

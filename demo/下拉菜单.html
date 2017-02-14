@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <title>下拉菜单</title>
+</head>
+<body>
+<div class="container">
+    <h1>下拉菜单</h1>
+    <div class="dropdown">
+        <button type="button"  class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+            <span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">休眠</a></li>
+            <li><a href="#">注销</a></li>
+            <li><a href="#">关机</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h1>下拉菜单 - 右对齐</h1>
+    <div class="dropdown" style="text-align:right">
+        <button type="button"  class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+            <span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li class="dropdown-header">请选择</li>
+            <li class="divider"></li>
+            <li class="disabled"><a href="#">休眠</a></li>
+            <li><a href="#">注销</a></li>
+            <li><a href="#">关机</a></li>
+        </ul>
+    </div>
+</div>
+    <script src="jquery/jquery-3.1.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

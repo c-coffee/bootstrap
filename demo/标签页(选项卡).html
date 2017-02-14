@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <title>标签页（选项卡）</title>
+    <style>
+        .tab-content div{
+            border:1px solid #d0d0d0;
+            border-top:0;
+            height:150px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>选项卡1</h1>
+    <!--
+    <div class="row">
+        <div class="col-md-4 col-xs-12">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#interest" data-toggle="tab">关注</a></li>
+                <li><a href="#navigation" data-toggle="tab">导航</a></li>
+                <li><a href="#recommend" data-toggle="tab">推荐</a></li>
+                <li><a href="#shopping" data-toggle="tab">购物</a></li>
+                <li><a href="#video" data-toggle="tab">视频</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="interest">百度文库 Bootstrap jQuery</div>
+                <div class="tab-pane" id="navigation">当当网 京东商城 淘宝网</div>
+                <div class="tab-pane" id="recommend">男子闯关连撞多车</div>
+                <div class="tab-pane" id="shopping">1元得iPhone SE</div>
+                <div class="tab-pane" id="video">爱丽丝梦游仙境</div>
+            </div>
+        </div>
+    </div>
+    -->
+    <h1>选项卡2</h1>
+
+    <div class="row">
+        <div class="col-md-4 col-xs-12">
+
+            <ul class="nav nav-tabs" id="myTab">
+                <li class="active"><a href="#interest" data-toggle="tab">关注</a></li>
+                <li><a href="#navigation" data-toggle="tab">导航</a></li>
+                <li><a href="#recommend" data-toggle="tab">推荐</a></li>
+                <li><a href="#shopping" data-toggle="tab">购物</a></li>
+                <li><a href="#video" data-toggle="tab">视频</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active fade in" id="interest">百度文库 Bootstrap jQuery</div>
+                <div class="tab-pane fade" id="navigation">当当网 京东商城 淘宝网</div>
+                <div class="tab-pane fade" id="recommend">男子闯关连撞多车</div>
+                <div class="tab-pane fade" id="shopping">1元得iPhone SE</div>
+                <div class="tab-pane fade" id="video">爱丽丝梦游仙境</div>
+            </div>
+            <button class="btn btn-primary" type="button" id="btn_video"> 视频 </button>
+        </div>
+    </div>
+
+    <h1>选项卡3</h1>
+    <!--
+    <div class="row">
+        <div class="col-md-4 col-xs-12">
+
+            <ul class="nav nav-pills" id="myTab">
+                <li class="active"><a href="#interest" data-toggle="pill">关注</a></li>
+                <li><a href="#navigation" data-toggle="pill">导航</a></li>
+                <li><a href="#recommend" data-toggle="pill">推荐</a></li>
+                <li><a href="#shopping" data-toggle="pill">购物</a></li>
+                <li><a href="#video" data-toggle="pill">视频</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active fade in" id="interest">百度文库 Bootstrap jQuery</div>
+                <div class="tab-pane fade" id="navigation">当当网 京东商城 淘宝网</div>
+                <div class="tab-pane fade" id="recommend">男子闯关连撞多车</div>
+                <div class="tab-pane fade" id="shopping">1元得iPhone SE</div>
+                <div class="tab-pane fade" id="video">爱丽丝梦游仙境</div>
+            </div>
+            <button class="btn btn-primary" type="button" id="btn_video"> 视频 </button>
+        </div>
+    </div>
+    -->
+</div>
+
+<script src="jquery/jquery-3.1.1.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script>
+    $(function(){
+        $('#btn_video').click(function(e){
+            //e.preventDefault();
+            //$(this).tab('show');
+            $('#myTab a[href="#video"]').tab('show');
+        });
+    })
+</script>
+</body>
+</html>
