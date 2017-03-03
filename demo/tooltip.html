@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <h1>你好！世界！</h1>
+    <a data-toggle="tooltip" data-placement="top" title="链接提示框" href="#">提示框</a><br>
+    <button id="popoverBtn" class="btn btn-danger" data-toggle="popover" title="dismissable popover" data-content="and here's some amazing">弹出框</button>
+    <br><br>
+    <div class="alert alert-danger" data-dismiss="alert">
+        <span class="close">&times</span>
+        <span class="glyphicon glyphicon-alert"></span> 警告：没有更多菜品信息了！
+    </div>
+</div>
+
+<script src="bootstrap/js/jquery-3.1.1.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        $('#popoverBtn').popover();
+    })
+</script>
+</body>
+</html>
