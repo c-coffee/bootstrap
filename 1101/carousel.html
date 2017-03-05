@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <h1>轮播广告</h1>
+    <hr>
+    <div class="carousel" id="myCarousel" data-interval="3000">
+        <div class="carousel-inner">
+            <div class="item active">
+                <a href="#">
+                    <img src="img/carousel_01.png">
+                    <div class="carousel-caption">
+                        说走就走
+                        <button type="button" class="btn btn-info">-- 出发 --</button>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="img/carousel_02.jpg">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="img/carousel_03.png">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="img/carousel_04.jpg">
+                </a>
+            </div>
+        </div>
+        <a href="#myCarousel" class="carousel-control left" data-slide="prev"><span class="glyphicon glyphicon glyphicon-chevron-left"></span></a>
+        <a href="#myCarousel" class="carousel-control right" data-slide="next"><span class="glyphicon glyphicon glyphicon-chevron-right"></span></a>
+        <ul class="carousel-indicators">
+            <li data-slide-to="0" data-target="#myCarousel" class="active"></li>
+            <li data-slide-to="1" data-target="#myCarousel"></li>
+            <li data-slide-to="2" data-target="#myCarousel"></li>
+            <li data-slide-to="3" data-target="#myCarousel"></li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "js/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</body>
+</html>
