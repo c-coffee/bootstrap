@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <h1>模态框</h1>
+    <hr>
+    <a class="btn btn-info" href="#myModal1" data-toggle="modal" >LOGIN</a>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">REGISTER</button>
+</div>
+<div  id="myModal1" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" data-dismiss="modal">&times;</span>
+                <h3 class="modal-title">用户注册</h3>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for = "uName">用户名</label>
+                        <input type="text" class="form-control" id="uName">
+                    </div>
+                    <div class="form-group">
+                        <label for = "uPwd">密码</label>
+                        <input type="text" class="form-control" id="uPwd">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <input class="btn btn-success" type="button" value="提交">
+                <input class="btn btn-info" data-dismiss="modal" type="button" value="关闭">
+            </div>
+        </div>
+    </div>
+</div>
+<div  id="myModal2" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"></div>
+            <div class="modal-body"></div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
