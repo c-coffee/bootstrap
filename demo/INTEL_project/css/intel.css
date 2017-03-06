@@ -13,3 +13,9 @@ body{
     margin-left:15px;
     margin-right:15px;
 }
+.main>.container>.row{
+    margin:20px 0;
+}
+.footer p{
+    margin:15px 0;
+}
