@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body{
+            margin-top:70px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+       <div class="navbar-header">
+           <a class="navbar-brand">Bootstrap</a>
+           <button data-target="#myCollapse" class="navbar-toggle" data-toggle="collapse" type="button">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+           </button>
+       </div>
+       <div class="navbar-collapse collapse" id="myCollapse">
+           <ul class="nav navbar-nav">
+               <li class="active dropdown">
+                   <a href="#" data-toggle="dropdown">产品介绍 <span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                       <li><a href="#">第一代产品</a></li>
+                       <li><a href="#">第二代产品</a></li>
+                       <li><a href="#">第三代产品</a></li>
+                   </ul>
+               </li>
+               <li><a href="#">公司简介</a></li>
+               <li><a href="#">联系我们</a></li>
+           </ul>
+           <button type="button" class="btn btn-primary navbar-btn navbar-right">注册</button>
+           <a href="#" class="navbar-text navbar-right">&nbsp;|&nbsp;&nbsp;&nbsp;</a>
+           <a href="#" class="navbar-text navbar-link navbar-right">登录</a>
+           <form class="navbar-form navbar-right" action="#">
+               <div class="has-feedback form-group">
+                   <label for="txtSearch" class="sr-only">搜索</label>
+                   <input type="text" id="txtSearch" class="form-control" placeholder="Search...">
+                   <span class="glyphicon glyphicon-search form-control-feedback"></span>
+               </div>
+           </form>
+       </div>
+   </div>
+</div>
+主页
+
+
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "js/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</body>
+</html>

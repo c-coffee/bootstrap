@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <h1>标签页</h1>
+    <hr>
+    <ul class="nav nav-tabs ">
+        <li class="active"><a href="#gj" data-toggle="tab">国际</a></li>
+        <li><a href="#gn" data-toggle="tab">国内</a></li>
+        <li><a href="#js" data-toggle="tab">军事</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="gj">国际 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid debitis dolorem expedita fugiat impedit mollitia nam nihil possimus quaerat, quasi quibusdam quidem quis ratione sequi sit temporibus totam veritatis.</div>
+        <div class="tab-pane fade"  id="gn">国内 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae cum earum eligendi esse eveniet exercitationem facere, fugit itaque iure neque nulla, perferendis voluptatem. Cupiditate itaque iusto pariatur perferendis voluptatem?</div>
+        <div class="tab-pane fade"  id="js">军事 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid laborum pariatur porro praesentium quidem reiciendis repellat voluptas. Autem beatae cum eos expedita mollitia, qui rem sapiente sit? Officiis, tempore.</div>
+    </div>
+    <hr>
+    <h1>工具提示</h1>
+    <hr>
+    <button  type="button" class="myBtn btn btn-primary" title="上提示" data-toggle="tooltip" data-placement="left">确定</button>
+    <button  type="button" class="myBtn btn btn-primary" title="上提示" data-toggle="tooltip" data-placement="top">确定</button>
+    <button  type="button" class="myBtn btn btn-primary" title="上提示" data-toggle="tooltip" data-placement="bottom">确定</button>
+    <button  type="button" class="myBtn btn btn-primary" title="上提示" data-toggle="tooltip" data-placement="right">确定</button>
+    <hr>
+    <h1>弹出框</h1>
+    <button id="btn1" class="btn btn-danger" type="button" data-toggle="popover" data-placement="top"
+    data-content="弹出框主体内容" title="弹出框标题"    >弹出框</button>
+    <hr>
+    <h1>警告框</h1>
+    <div class="alert alert-danger fade in  alert-dismissible" >
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae cumque deleniti dicta distinctio hic inventore, iure magni natus nemo, nesciunt nobis obcaecati, officiis quibusdam recusandae reprehenderit vitae? Assumenda, vero.
+        <button type="button" class="btn btn-danger" data-dismiss="alert">关闭</button>
+    </div>
+    <div class="alert alert-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae cumque deleniti dicta distinctio hic inventore, iure magni natus nemo, nesciunt nobis obcaecati, officiis quibusdam recusandae reprehenderit vitae? Assumenda, vero.</div>
+    <div class="alert alert-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae cumque deleniti dicta distinctio hic inventore, iure magni natus nemo, nesciunt nobis obcaecati, officiis quibusdam recusandae reprehenderit vitae? Assumenda, vero.</div>
+    <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae cumque deleniti dicta distinctio hic inventore, iure magni natus nemo, nesciunt nobis obcaecati, officiis quibusdam recusandae reprehenderit vitae? Assumenda, vero.</div>
+</div>
+
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+
+    $('.myBtn').tooltip();
+    $('#btn1').popover();
+
+
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "js/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</body>
+</html>

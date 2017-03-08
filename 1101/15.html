@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <h1>模态框</h1>
+    <hr>
+    <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">模态框</button>
+</div>
+
+<!--半透明背景设置-->
+<div class="modal" id="myModal" tabindex="-1" data-show="false" data-backdrop="static" data-keyboard="false">
+    <!--模态框 长宽高设置-->
+    <div class="modal-dialog">
+        <!--模态框内容容器-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                模态框头部
+            </div>
+            <div class="modal-body">模态框主体</div>
+            <div class="modal-footer">模态框底部</div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "js/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</body>
+</html>
