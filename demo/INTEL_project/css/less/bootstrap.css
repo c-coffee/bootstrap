@@ -5263,37 +5263,3 @@ button.close {
     display: none !important;
   }
 }
-body {
-  margin-top: 60px;
-}
-.rd_shadow {
-  box-shadow: 8px 8px 0 #01559B;
-}
-.logo {
-  width: 63px;
-  height: 42px;
-  display: inline-block;
-  background: url("../img/hdr-spr.png") 0 -512px no-repeat;
-  margin-top: 8px;
-}
-.login-menu {
-  width: 400px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-.main {
-  background: #0062A9;
-  color: #fff;
-}
-.main a {
-  color: #fff;
-}
-.main a:hover {
-  color: #00ADEF;
-}
-.main .container > .row {
-  margin: 40px 0;
-}
-.footer p {
-  margin: 15px 0;
-}
