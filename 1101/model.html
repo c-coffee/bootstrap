@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <h1>模态框</h1>
+    <a href="#myModal1" class="btn btn-primary" data-toggle="modal">LOGIN</a>
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">REGISTER</button>
+</div>
+
+<div id="myModal1" class="modal"> <!--半透明的黑色遮罩层-->
+    <div class="modal-dialog"> <!--  指定宽／高／定位-->
+        <div class="modal-content">  <!-- 边框/背景色/阴影-->
+            <div class="modal-header">头部</div>
+            <div class="modal-body">主体</div>
+            <div class="modal-footer">尾部</div>
+        </div>
+    </div>
+</div>
+
+<div id="myModal2" class="modal"> <!--半透明的黑色遮罩层-->
+
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
