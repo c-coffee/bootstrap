@@ -1,0 +1,28 @@
+@jdRed:lighten(hsl(90, 80%, 50%), 20%);
+@bkColor:#f1d3f4;
+.bordered(@bt){
+  border-top:@bt;
+}
+
+@imgSize: image-size("../img/carousel_01.png");
+
+/*混合(Mixin)*/
+.stdMargin(){
+  margin-bottom:10px;
+  margin-top:20px;
+  color:@jdRed;
+}
+.h1{
+  margin:@imgSize;
+  font-size:36px;
+  .stdMargin;
+  .bordered(2px);
+}
+.h2{
+  font-size:28px;
+  .stdMargin;
+}
+.h3{
+  font-size:24px;
+  .stdMargin;
+}
